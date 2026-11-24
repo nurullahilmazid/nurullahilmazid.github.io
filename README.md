@@ -1,16 +1,27 @@
-## Hi there 👋
+# Md. Nurullahil Mazid — Portfolio
 
-<!--
-**nurullahilmazid/nurullahilmazid** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+One-page portfolio website for Md. Nurullahil Mazid, Graphic Designer.
 
-Here are some ideas to get you started:
+## Files
+- `index.html`: the whole site (Tailwind CSS + Alpine.js, loaded from CDN)
+- `assets/img/profile.jpg`: profile photo
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## Run locally
+Open `index.html` in any browser. An internet connection is needed for Tailwind, Alpine.js and Google Fonts.
+
+## Edit content
+Most content is in the `app()` script at the bottom of `index.html`:
+- `services`: service cards
+- `chips`: soft skills
+- `tools`: software and skill level (%)
+- `edu`: education and training
+- `contacts`: phone, email, location
+
+To change the photo, replace `assets/img/profile.jpg` with a new image using the same name.
+
+## Publish free
+- **Netlify Drop:** go to app.netlify.com/drop and drag this folder in.
+- **GitHub Pages:** upload the files to a repository, then Settings → Pages → deploy from the `main` branch.
+
+## Credits
+Based on the Folio template by Laurent Begey, distributed by ThemeWagon (MIT License).
