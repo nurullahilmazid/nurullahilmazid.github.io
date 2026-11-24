@@ -5,6 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Md. Nurullahil Mazid, Graphic Designer in Savar, Dhaka. Logos, social media graphics, print design and photo editing.">
 <title>Nurullahil Mazid Portfolio</title>
+<link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+<link rel="icon" href="assets/img/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<meta name="theme-color" content="#FF6B2B">
 
 <script src="https://cdn.tailwindcss.com/3.4.5"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.1/dist/cdn.min.js"></script>
@@ -51,6 +55,8 @@ background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/sv
 .card-h{transition:transform .28s cubic-bezier(.4,0,.2,1),border-color .18s}
 .card-h:hover{transform:translateY(-4px)}
 [x-cloak]{display:none!important}
+.grid>*{min-width:0}
+.brk{overflow-wrap:anywhere}
 .wrap{max-width:72rem}
 @media (min-width:1700px){.wrap{max-width:84rem}html{font-size:17px}}
 </style>
@@ -104,7 +110,7 @@ background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/sv
   <div class="absolute top-1/4 right-0 w-96 h-96 bg-accent/10 rounded-full blur-3xl pointer-events-none" aria-hidden="true"></div>
   <div class="absolute bottom-1/4 left-0 w-64 h-64 bg-zinc-200/50 dark:bg-zinc-800/30 rounded-full blur-3xl pointer-events-none" aria-hidden="true"></div>
   <div class="relative z-10 wrap mx-auto px-4 sm:px-6 py-14 sm:py-20 lg:py-24 w-full">
-    <div class="grid md:grid-cols-2 gap-10 md:gap-12 items-center">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12 items-center">
       <div>
         <p class="reveal text-sm font-medium text-accent tracking-widest uppercase mb-4">Available for work</p>
         <h1 class="reveal d1 font-display font-bold text-4xl sm:text-5xl md:text-6xl lg:text-7xl 3xl:text-8xl leading-[1.05] tracking-tight text-zinc-900 dark:text-white mb-6">
@@ -145,7 +151,7 @@ background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/sv
       <p class="reveal text-xs font-medium text-accent tracking-widest uppercase mb-3">What I do</p>
       <h2 class="reveal d1 font-display font-bold text-3xl sm:text-4xl md:text-5xl text-zinc-900 dark:text-white">Services</h2>
     </div>
-    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
       <template x-for="(v,i) in services" :key="v.t">
         <article class="reveal card-h group rounded-2xl p-7 sm:p-8 border hover:border-accent"
           :class="i===1||i===4 ? 'bg-zinc-900 dark:bg-zinc-800 border-zinc-800' : 'bg-white dark:bg-zinc-900 border-zinc-100 dark:border-zinc-800'">
@@ -164,10 +170,10 @@ background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/sv
 <!-- ABOUT -->
 <section id="about" class="py-16 sm:py-24">
   <div class="wrap mx-auto px-4 sm:px-6">
-    <div class="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-center">
       <div class="reveal order-2 md:order-1">
-        <div class="pf w-full aspect-square max-w-xs sm:max-w-sm mx-auto rounded-3xl">
-          <img src="assets/img/profile.jpg" alt="Md. Nurullahil Mazid">
+        <div class="pf w-full aspect-[3/4] max-w-xs sm:max-w-sm 3xl:max-w-md mx-auto rounded-3xl">
+          <img src="assets/img/about.jpg" alt="Md. Nurullahil Mazid" loading="lazy" style="object-position:center">
         </div>
       </div>
       <div class="order-1 md:order-2">
@@ -199,7 +205,7 @@ background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/sv
       <p class="reveal text-xs font-medium text-accent tracking-widest uppercase mb-3">Toolkit</p>
       <h2 class="reveal d1 font-display font-bold text-3xl sm:text-4xl md:text-5xl text-zinc-900 dark:text-white">Tools &amp; languages</h2>
     </div>
-    <div class="grid lg:grid-cols-3 gap-5 sm:gap-6">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-5 sm:gap-6">
       <div class="reveal lg:col-span-2 bg-white dark:bg-zinc-900 rounded-2xl p-7 sm:p-8 border border-zinc-100 dark:border-zinc-800">
         <h3 class="font-display font-bold text-xl text-zinc-900 dark:text-white mb-6">Design software</h3>
         <template x-for="t in tools" :key="t[0]">
@@ -230,7 +236,7 @@ background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/sv
       <p class="reveal text-xs font-medium text-accent tracking-widest uppercase mb-3">Background</p>
       <h2 class="reveal d1 font-display font-bold text-3xl sm:text-4xl md:text-5xl text-zinc-900 dark:text-white">Education &amp; training</h2>
     </div>
-    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
       <template x-for="e in edu" :key="e.t">
         <article class="reveal card-h rounded-2xl p-7 bg-zinc-50 dark:bg-zinc-900 border border-zinc-100 dark:border-zinc-800 hover:border-accent">
           <span class="inline-block text-xs bg-orange-50 dark:bg-zinc-800 text-accent border border-orange-200 dark:border-zinc-700 px-3 py-1 rounded-full mb-4" x-text="e.k"></span>
@@ -245,10 +251,10 @@ background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/sv
 <!-- CONTACT -->
 <section id="contact" class="pb-16 sm:pb-24">
   <div class="wrap mx-auto px-4 sm:px-6">
-    <div class="bg-zinc-900 dark:bg-zinc-800 rounded-3xl p-7 sm:p-10 md:p-16 relative overflow-hidden">
+    <div class="bg-zinc-900 dark:bg-zinc-800 rounded-3xl p-5 sm:p-10 md:p-16 relative overflow-hidden">
       <div class="absolute top-0 right-0 w-64 h-64 bg-accent/20 rounded-full blur-3xl pointer-events-none" aria-hidden="true"></div>
       <div class="absolute bottom-0 left-0 w-40 h-40 bg-accent/10 rounded-full blur-2xl pointer-events-none" aria-hidden="true"></div>
-      <div class="relative z-10 grid lg:grid-cols-2 gap-10 lg:gap-12 items-start">
+      <div class="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-12 items-start">
         <div>
           <p class="reveal text-xs font-medium text-accent tracking-widest uppercase mb-3">Get in touch</p>
           <h2 class="reveal d1 font-display font-bold text-3xl sm:text-4xl md:text-5xl text-white leading-tight mb-5">Let's work<br>together</h2>
@@ -256,15 +262,15 @@ background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/sv
         </div>
         <div class="reveal d2 flex flex-col gap-4">
           <template x-for="c in contacts" :key="c.l">
-            <div class="flex items-center gap-4 bg-zinc-800 dark:bg-zinc-900/60 border border-zinc-700 rounded-2xl p-4 sm:p-5">
+            <div class="flex flex-wrap sm:flex-nowrap items-center gap-x-4 gap-y-3 bg-zinc-800 dark:bg-zinc-900/60 border border-zinc-700 rounded-2xl p-4 sm:p-5">
               <span class="w-11 h-11 flex items-center justify-center bg-accent/15 text-accent rounded-xl shrink-0">
                 <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" :d="c.i"/></svg>
               </span>
               <div class="min-w-0 flex-1">
                 <p class="text-xs text-zinc-400" x-text="c.l"></p>
-                <p class="text-white font-medium break-words" x-text="c.v"></p>
+                <p class="text-white font-medium brk text-[15px] sm:text-base" x-text="c.v"></p>
               </div>
-              <button x-show="c.copy" type="button" @click="copy(c)" class="shrink-0 shimmer bg-accent text-white text-sm font-medium px-4 py-2.5 rounded-full hover:bg-accent-light transition-colors" x-text="c.done?'Copied':'Copy'"></button>
+              <button x-show="c.copy" type="button" @click="copy(c)" class="shrink-0 w-full sm:w-auto shimmer bg-accent text-white text-sm font-medium px-4 py-2.5 rounded-full hover:bg-accent-light transition-colors" x-text="c.done?'Copied':'Copy'"></button>
             </div>
           </template>
         </div>
